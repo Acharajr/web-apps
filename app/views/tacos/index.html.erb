@@ -1,0 +1,15 @@
+<h1>I love Tacos!<h1>
+
+<p>I love good quality taco<p>
+
+<% 
+fillings = ["meat", "vegan beef", "pork", " These nuts"]
+%>
+
+<p> We have <%= fillings.count%> tacos:</p>
+
+<ul>
+<% for taco in fillings%>
+<li><%= taco%></li>
+<% end %>
+</ul>
